@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catering Service Website</title>
+    <!-- css linkup -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <header class="max-w-sm md:max-w-screen-sm lg:max-w-screen-xl mx-auto">
+      <!-- navbar section -->
+      <nav>
+        <div class="flex flex-row justify-between items-center bg-base-100 lg:bg-[#495b97] p-3 rounded-b-xl">
+          <div class="ml-10">
+            <p class="text-2xl lg:text-4xl font-bold lg:text-white">EduNova</p>
+          </div>
+          <div class="hidden lg:flex font-medium text-white navbar-end ">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </label>
+              <ul tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 relative right-3">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <input type="text" placeholder="Search" class="input input-bordered w-32 md:w-40 rounded-full p-6" />
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </nav>
+
+      <!-- contact form -->
+      <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-8">
+          Contact Us
+        </h2>
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <form action="#" method="POST" class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700"
+                >Name</label
+              >
+              <div class="mt-1">
+                <input
+                  type="text"z
+                  name="name"
+                  id="name"
+                  required
+                  class="block py-2 w-full shadow-sm sm:text-sm border border-gray-400 rounded-md"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <div class="mt-1">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  class="block py-2 w-full shadow-sm sm:text-sm border border-gray-400 rounded-md"
+
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700"
+                >Phone</label
+              >
+              <div class="mt-1">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  required
+                  class="block py-2 w-full shadow-sm sm:text-sm border border-gray-400 rounded-md"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label
+                for="address"
+                class="block text-sm font-medium text-gray-700"
+                >Address</label
+              >
+              <div class="mt-1">
+                <textarea
+                  name="address"
+                  id="address"
+                  rows="4"
+                  required
+                  class="block w-full shadow-sm sm:text-sm border border-gray-400 rounded-md"
+                ></textarea>
+              </div>
+            </div>
+
+            <div>
+              <button
+                onclick="alert('Form Submitted Successfully')"
+                type="submit"
+                class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- location -->
+      <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-8">
+          Our Location
+        </h2>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="relative h-64">
+            <iframe
+              class="absolute inset-0 w-full h-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.070458532607!2d-122.08385138468148!3d37.38605177983297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbaad9df5f5c9%3A0x48a6e4d0307f6a4f!2sGoogleplex!5e0!3m2!1sen!2sus!4v1624623708265!5m2!1sen!2sus"
+              frameborder="0"
+              allowfullscreen
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+          <div class="p-8">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Visit Us</h3>
+            <p class="text-gray-700 mb-4">
+              1600 Amphitheatre Parkway<br />
+              Mountain View, CA 94043<br />
+              United States
+            </p>
+            <div
+              class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
+            >
+              <div class="mb-4 sm:mb-0">
+                <p class="text-gray-900 font-medium">Email:</p>
+                <p class="text-gray-700">info@company.com</p>
+              </div>
+              <div class="mb-4 sm:mb-0">
+                <p class="text-gray-900 font-medium">Phone:</p>
+                <p class="text-gray-700">(123) 456-7890</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- socket section -->
+    <footer
+    class="bg-[#42579c] text-white text-center py-4 shadow-lg bottom-0 w-full mt-10">
+    <p id="datetime" class="text-2xl"></p>
+  </footer>
+
+    <script>
+      function updateDateTime() {
+        const now = new Date();
+        const datetime = now.toLocaleString();
+        document.getElementById("datetime").innerText = datetime;
+      }
+
+      // Update date and time on page load
+      updateDateTime();
+
+      // Update date and time every second
+      setInterval(updateDateTime, 1000);
+    </script>
+  </body>
+</html>

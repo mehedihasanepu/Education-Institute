@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catering Service Website</title>
+    <!-- css linkup -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- javascript linkup -->
+    <script src="faq.js"></script>
+
+  </head>
+<body>
+    <header class="max-w-sm md:max-w-screen-sm lg:max-w-screen-xl mx-auto">
+      <!-- navbar -->  
+      <nav>
+        <div class="flex flex-row justify-between items-center bg-base-100 lg:bg-[#495b97] p-3 rounded-b-xl">
+          <div class="ml-10">
+            <p class="text-2xl lg:text-4xl font-bold lg:text-white">EduNova</p>
+          </div>
+          <div class="hidden lg:flex font-medium text-white navbar-end ">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </label>
+              <ul tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 relative right-3">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <input type="text" placeholder="Search" class="input input-bordered w-32 md:w-40 rounded-full p-6" />
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </nav>
+
+      <!-- faq section -->
+      <section class="container mx-auto p-6">
+        <h1 class="text-4xl font-bold text-center mb-10">Frequently Asked Questions</h1>
+        
+     <div class="max-w-screen-lg mx-auto">
+      <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+        <div class="faq-question flex justify-between items-center text-2xl font-semibold mb-4" onclick="toggleFaq(1)">
+          <span>What courses does EduNova offer?</span>
+          <svg id="arrow-1" class="w-6 h-6 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        <p id="answer-1" class="hidden">EduNova offers a wide range of courses including Data Science and Analytics, Digital Marketing Mastery, Software Development Bootcamp, Entrepreneurship and Innovation, Cybersecurity Essentials, Creative Writing and Storytelling, Leadership and Management, and Environmental Science and Sustainability.</p>
+      </div>
+      
+      <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+        <div class="faq-question flex justify-between items-center text-2xl font-semibold mb-4" onclick="toggleFaq(2)">
+          <span>How do I enroll in a course?</span>
+          <svg id="arrow-2" class="w-6 h-6 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        <p id="answer-2" class="hidden">You can enroll in a course by visiting our website, selecting the desired course, and following the enrollment instructions. If you need assistance, our support team is available to help you through the process.</p>
+      </div>
+      
+      <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+        <div class="faq-question flex justify-between items-center text-2xl font-semibold mb-4" onclick="toggleFaq(3)">
+          <span>What is the duration of the courses?</span>
+          <svg id="arrow-3" class="w-6 h-6 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        <p id="answer-3" class="hidden">The duration of our courses varies. For example, the Data Science and Analytics course is 6 months long, while the Digital Marketing Mastery course is 3 months long. You can find the duration details for each course on our course information pages.</p>
+      </div>
+      
+      <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+        <div class="faq-question flex justify-between items-center text-2xl font-semibold mb-4" onclick="toggleFaq(4)">
+          <span>Are the courses available online?</span>
+          <svg id="arrow-4" class="w-6 h-6 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        <p id="answer-4" class="hidden">Yes, all our courses are available online. EduNova leverages cutting-edge technology to provide an interactive and engaging online learning experience that you can access from anywhere in the world.</p>
+      </div>
+      
+      <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+        <div class="faq-question flex justify-between items-center text-2xl font-semibold mb-4" onclick="toggleFaq(5)">
+          <span>What support is available for students?</span>
+          <svg id="arrow-5" class="w-6 h-6 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        <p id="answer-5" class="hidden">EduNova provides comprehensive support for students, including access to instructors, peer forums, and technical assistance. We are committed to helping you succeed and are here to support you every step of the way.</p>
+      </div>
+      
+      <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+        <div class="faq-question flex justify-between items-center text-2xl font-semibold mb-4" onclick="toggleFaq(6)">
+          <span>Can I get a refund if I need to cancel my enrollment?</span>
+          <svg id="arrow-6" class="w-6 h-6 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        <p id="answer-6" class="hidden">Our refund policy allows for cancellations and refunds within a specific period after enrollment. Please refer to our refund policy on the website or contact our support team for detailed information.</p>
+      </div>
+     </div>
+        
+      </section>
+     <!-- socket section -->
+     <footer
+     class="bg-[#42579c] text-white text-center py-4 shadow-lg bottom-0 w-full mt-10">
+     <p id="datetime" class="text-2xl"></p>
+   </footer>
+
+   <script>
+    function toggleFaq(index) {
+      const answer = document.getElementById(`answer-${index}`);
+      const arrow = document.getElementById(`arrow-${index}`);
+      if (answer.classList.contains('hidden')) {
+        answer.classList.remove('hidden');
+        arrow.classList.add('rotate-180');
+      } else {
+        answer.classList.add('hidden');
+        arrow.classList.remove('rotate-180');
+      }
+    }
+  </script>
+    
+</body>
+</html>
+
+  

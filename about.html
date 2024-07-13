@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catering Service Website</title>
+    <!-- css linkup -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- javascript linkup -->
+    <script src="faq.js"></script>
+  </head>
+
+  <body>
+    <header class="max-w-sm md:max-w-screen-sm lg:max-w-screen-xl mx-auto">
+      <!-- navbar -->
+      <nav>
+        <div class="flex flex-row justify-between items-center bg-base-100 lg:bg-[#495b97] p-3 rounded-b-xl">
+          <div class="ml-10">
+            <p class="text-2xl lg:text-4xl font-bold lg:text-white">EduNova</p>
+          </div>
+          <div class="hidden lg:flex font-medium text-white navbar-end ">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </label>
+              <ul tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 relative right-3">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <input type="text" placeholder="Search" class="input input-bordered w-32 md:w-40 rounded-full p-6" />
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </nav>
+
+      <!-- staff profile -->
+      <h1 class="text-4xl font-bold mt-14 text-center">Staff Profile</h1>
+
+      <div class="grid gap-8 lg:grid-cols-3 sm:grid-cols-2 mt-6">
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center"
+        >
+          <img
+            class="w-24 h-24 rounded-full object-cover mb-4"
+            src="image/img5.jpg"
+            alt="John Doe"
+          />
+          <h3 class="text-xl font-bold text-gray-900">Dr. James Peterson</h3>
+      <p class="text-sm font-semibold text-gray-700">Lead Instructor, Data Science and Analytics</p>
+          <p class="text-gray-700 text-center mt-2">
+            Dr. James Peterson is a seasoned data scientist with over 15 years of experience in academia and industry. He holds a Ph.D. in Computer Science from MIT and has worked with top tech companies on big data projects.
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center"
+        >
+          <img
+            class="w-24 h-24 rounded-full object-cover mb-4"
+            src="image/img3.jpg"
+            alt="Jane Smith"
+          />
+          <h3 class="text-xl font-bold text-gray-900">Jane Smith</h3>
+      <p class="text-sm font-semibold text-gray-700">Senior Instructor, Digital Marketing Mastery</p>
+
+          <p class="text-gray-700 text-center mt-2">
+            Laura Bennett is a digital marketing expert with over 10 years of experience in crafting successful online marketing strategies for various industries. She holds a Master’s degree in Marketing from Northwestern University.
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center"
+        >
+          <img
+            class="w-24 h-24 rounded-full object-cover mb-4"
+            src="image/img2.jpg"
+            alt="Sam Johnson"
+          />
+          <h3 class="text-xl font-bold text-gray-900">Sam Johnson</h3>
+      <p class="text-sm font-semibold text-gray-700">Lead Instructor, Software Development Bootcamp</p>
+
+          <p class="text-gray-700 text-center mt-2">
+            Michael Harris is a software development professional with over 12 years of experience in full-stack development. He holds a Master’s degree in Computer Science from Carnegie Mellon University.
+          </p>
+        </div>
+      </div>
+
+      <!-- about company -->
+      <h1 class="text-4xl text-center font-bold mt-14">About Company</h1>
+      <div class="grid gap-8 lg:grid-cols-2 mt-14">
+        <div class="lg:pr-12">
+          <img
+            class="w-full h-auto rounded-lg shadow-lg"
+            src="image/company-img.jpeg"
+            alt="Company Image"
+          />
+        </div>
+        <div class="flex flex-col justify-center">
+          <p class="text-gray-700 mb-4">
+           <span class="text-lg font-bold">EduNova</span>  is a pioneering educational institute dedicated to fostering innovation, creativity, and excellence in learning. Our mission is to provide a transformative educational experience that empowers students to reach their full potential and become leaders in their fields.
+          </p>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+          <p class="text-gray-700 mb-4">
+            EduNova provides high-quality, accessible education that prepares students for success in a dynamic world. We foster innovation, lifelong learning, inclusivity, real-world experience, leadership, and the use of cutting-edge technology to transform education and empower individuals to shape a brighter future.
+          </p>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Why Choose Us</h3>
+          <p class="text-gray-700">
+            EduNova envisions becoming a global beacon of innovative education, where every individual is empowered to achieve their highest potential and make significant contributions to society. We strive to create an educational environment that not only imparts knowledge but also nurtures creativity, critical thinking, and a passion for lifelong learning. 
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- socket section -->
+    <footer
+    class="bg-[#42579c] text-white text-center py-4 shadow-lg bottom-0 w-full mt-10">
+    <p id="datetime" class="text-2xl"></p>
+  </footer>
+
+    <script>
+      function updateDateTime() {
+        const now = new Date();
+        const datetime = now.toLocaleString();
+        document.getElementById("datetime").innerText = datetime;
+      }
+
+      // Update date and time on page load
+      updateDateTime();
+
+      // Update date and time every second
+      setInterval(updateDateTime, 1000);
+    </script>
+  </body>
+</html>
